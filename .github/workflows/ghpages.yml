@@ -2,7 +2,7 @@
 
 name: Deploy GH Pages
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
@@ -40,6 +40,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           personal_token: ${{ secrets.ACCESS_TOKEN }}
-          publish_dir: ./public
+          publish_dir: ./build
           cname: discordbot.mod.land
           external_repository: Skillz4Killz/gamer-landing
