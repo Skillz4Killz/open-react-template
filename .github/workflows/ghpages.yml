@@ -25,22 +25,21 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      - name: GitHub Pages
-        uses: crazy-max/ghaction-github-pages@v2.2.0
+      - name: Cache dependencies
+        uses: actions/cache@v2
         with:
-          # GitHub repository where assets will be deployed (default current)
-          repo: "https://github.com/Skillz4Killz/gamer-landing"
-          # Git branch where assets will be deployed
-          target_branch: "master"
-          # Create incremental commit instead of doing push force
-          keep_history: true
-          # Allow an empty commit to be created
-          allow_empty_commit: false
-          # Build directory to deploy
-          build_dir: "build"
-          # Write the given domain name to the CNAME file
-          fqdn: discordbot.mod.land
-          # Allow Jekyll to build your site
-          jekyll: false
-        env:
-          GH_PAT: ${{ secrets.GITHUB_TOKEN }}
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - run: npm ci
+      - run: npm run build
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          personal_token: ${{ secrets.ACCESS_TOKEN }}
+          publish_dir: ./public
+          cname: discordbot.mod.land
+          external_repository: Skillz4Killz/gamer-landing
