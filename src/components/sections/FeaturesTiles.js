@@ -69,7 +69,7 @@ const FeaturesTiles = ({
                     An amazingly entertaining idle game to keep your server constantly active and giving your users a
                     chance to win Discord Nitro!
                   </p>
-                  <img src="https://i.imgur.com/54JXspA.png" />
+                  <img src="https://i.imgur.com/54JXspA.png" alt="" />
                 </div>
               </div>
             </div>
@@ -92,8 +92,8 @@ const FeaturesTiles = ({
                     The most beautiful and extremely customizable profile/rank cards on Discord! Give or take roles when
                     users gain or lose levels. Remove XP automatically for inactivity and reward XP for activity!
                   </p>
-                  <img src="https://i.imgur.com/3MTeIXH.png" />
-                  <img src="https://i.imgur.com/mznXR6k.png" />
+                  <img src="https://i.imgur.com/3MTeIXH.png" alt="" />
+                  <img src="https://i.imgur.com/mznXR6k.png" alt="" />
                 </div>
               </div>
             </div>
@@ -117,7 +117,7 @@ const FeaturesTiles = ({
                     with a method of sending out pertinent information to those you want, while allowing users the
                     ability to RSVP to the event to let you know they’ll be there (or that they can’t make it).
                   </p>
-                  <img src="https://i.imgur.com/iKaUFKU.gif" />
+                  <img src="https://i.imgur.com/iKaUFKU.gif" alt="" />
                 </div>
               </div>
             </div>
@@ -140,8 +140,8 @@ const FeaturesTiles = ({
                     Don't you hate getting @ mentions for posts that don't matter? Using Gamers advanced alerts system
                     you can filter them to be exactly what you want!
                   </p>
-                  <img src="https://i.imgur.com/gSAJCUL.png" />
-                  <img src="https://i.imgur.com/NzlRwVY.png" />
+                  <img src="https://i.imgur.com/gSAJCUL.png" alt="" />
+                  <img src="https://i.imgur.com/NzlRwVY.png" alt="" />
                 </div>
               </div>
             </div>
@@ -164,7 +164,7 @@ const FeaturesTiles = ({
                     Collect suggestions or bug reports from your users. A flexible and customizable feedback feature
                     that provides the best experience for not just developers but users as well for sending feedback.
                   </p>
-                  <img src="https://i.imgur.com/Q0dNsCc.png" />
+                  <img src="https://i.imgur.com/Q0dNsCc.png" alt="" />
                 </div>
               </div>
             </div>
