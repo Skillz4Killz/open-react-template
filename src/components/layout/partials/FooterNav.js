@@ -1,38 +1,28 @@
-import React from 'react';
-import classNames from 'classnames';
-import { Link } from 'react-router-dom';
+import React from "react";
+import classNames from "classnames";
+import { Link } from "react-router-dom";
 
-const FooterNav = ({
-  className,
-  ...props
-}) => {
-
-  const classes = classNames(
-    'footer-nav',
-    className
-  );
+const FooterNav = ({ className, ...props }) => {
+  const classes = classNames("footer-nav", className);
 
   return (
-    <nav
-      {...props}
-      className={classes}
-    >
+    <nav {...props} className={classes}>
       <ul className="list-reset">
         <li>
-          <Link to="#0">Contact</Link>
+          <a href="https://gamer.mod.land">Guides</a>
         </li>
         <li>
-          <Link to="#0">About us</Link>
+          <a href="https://gamer.mod.land/docs/policy.html">Privacy Policy</a>
         </li>
         <li>
-          <Link to="#0">FAQ's</Link>
+          <a href="https://gamer.mod.land/docs/faq.html">FAQ's</a>
         </li>
         <li>
-          <Link to="#0">Support</Link>
+          <a href="https://gamer.mod.land/docs/vip.html">VIP</a>
         </li>
       </ul>
     </nav>
   );
-}
+};
 
 export default FooterNav;

@@ -1,16 +1,16 @@
-import React from 'react';
-import classNames from 'classnames';
-import { SectionTilesProps } from '../../utils/SectionProps';
-import SectionHeader from './partials/SectionHeader';
-import Image from '../elements/Image';
+import React from "react";
+import classNames from "classnames";
+import { SectionTilesProps } from "../../utils/SectionProps";
+import SectionHeader from "./partials/SectionHeader";
+import Image from "../elements/Image";
 
 const propTypes = {
-  ...SectionTilesProps.types
-}
+  ...SectionTilesProps.types,
+};
 
 const defaultProps = {
-  ...SectionTilesProps.defaults
-}
+  ...SectionTilesProps.defaults,
+};
 const FeaturesTiles = ({
   className,
   topOuterDivider,
@@ -22,60 +22,54 @@ const FeaturesTiles = ({
   pushLeft,
   ...props
 }) => {
-
   const outerClasses = classNames(
-    'features-tiles section',
-    topOuterDivider && 'has-top-divider',
-    bottomOuterDivider && 'has-bottom-divider',
-    hasBgColor && 'has-bg-color',
-    invertColor && 'invert-color',
+    "features-tiles section",
+    topOuterDivider && "has-top-divider",
+    bottomOuterDivider && "has-bottom-divider",
+    hasBgColor && "has-bg-color",
+    invertColor && "invert-color",
     className
   );
 
   const innerClasses = classNames(
-    'features-tiles-inner section-inner pt-0',
-    topDivider && 'has-top-divider',
-    bottomDivider && 'has-bottom-divider'
+    "features-tiles-inner section-inner pt-0",
+    topDivider && "has-top-divider",
+    bottomDivider && "has-bottom-divider"
   );
 
-  const tilesClasses = classNames(
-    'tiles-wrap center-content',
-    pushLeft && 'push-left'
-  );
+  const tilesClasses = classNames("tiles-wrap center-content", pushLeft && "push-left");
 
   const sectionHeader = {
-    title: 'Build up the whole picture',
-    paragraph: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.'
+    title: "What Gamer Can Do For You!",
+    paragraph:
+      "Gamer is one of the most advanced bots on Discord. It was designed for specifically for official gaming servers. But it is built in a way that it can be used by any server!",
   };
 
   return (
-    <section
-      {...props}
-      className={outerClasses}
-    >
+    <section {...props} className={outerClasses}>
       <div className="container">
         <div className={innerClasses}>
           <SectionHeader data={sectionHeader} className="center-content" />
           <div className={tilesClasses}>
-
             <div className="tiles-item reveal-from-bottom">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={require('./../../assets/images/feature-tile-icon-01.svg')}
+                      src={require("./../../assets/images/feature-tile-icon-01.svg")}
                       alt="Features tile icon 01"
                       width={64}
-                      height={64} />
+                      height={64}
+                    />
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">
-                    Robust Workflow
-                    </h4>
+                  <h4 className="mt-0 mb-8">Idle Game & Counting Game & Free Nitro</h4>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
-                    </p>
+                    An amazingly entertaining idle game to keep your server constantly active and giving your users a
+                    chance to win Discord Nitro!
+                  </p>
+                  <img src="https://i.imgur.com/54JXspA.png" />
                 </div>
               </div>
             </div>
@@ -85,19 +79,21 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={require('./../../assets/images/feature-tile-icon-02.svg')}
+                      src={require("./../../assets/images/feature-tile-icon-02.svg")}
                       alt="Features tile icon 02"
                       width={64}
-                      height={64} />
+                      height={64}
+                    />
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">
-                    Robust Workflow
-                    </h4>
+                  <h4 className="mt-0 mb-8">Leveling, Missions/Quests, XP!</h4>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
-                    </p>
+                    The most beautiful and extremely customizable profile/rank cards on Discord! Give or take roles when
+                    users gain or lose levels. Remove XP automatically for inactivity and reward XP for activity!
+                  </p>
+                  <img src="https://i.imgur.com/3MTeIXH.png" />
+                  <img src="https://i.imgur.com/mznXR6k.png" />
                 </div>
               </div>
             </div>
@@ -107,19 +103,21 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={require('./../../assets/images/feature-tile-icon-03.svg')}
+                      src={require("./../../assets/images/feature-tile-icon-03.svg")}
                       alt="Features tile icon 03"
                       width={64}
-                      height={64} />
+                      height={64}
+                    />
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">
-                    Robust Workflow
-                    </h4>
+                  <h4 className="mt-0 mb-8">Looking For Group / Events</h4>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
-                    </p>
+                    Organize and schedule a gathering whether it be in real life, or on the server. It will provide you
+                    with a method of sending out pertinent information to those you want, while allowing users the
+                    ability to RSVP to the event to let you know they’ll be there (or that they can’t make it).
+                  </p>
+                  <img src="https://i.imgur.com/iKaUFKU.gif" />
                 </div>
               </div>
             </div>
@@ -129,19 +127,21 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={require('./../../assets/images/feature-tile-icon-04.svg')}
+                      src={require("./../../assets/images/feature-tile-icon-04.svg")}
                       alt="Features tile icon 04"
                       width={64}
-                      height={64} />
+                      height={64}
+                    />
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">
-                    Robust Workflow
-                    </h4>
+                  <h4 className="mt-0 mb-8">Subscribe To Alerts You Care About!</h4>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
-                    </p>
+                    Don't you hate getting @ mentions for posts that don't matter? Using Gamers advanced alerts system
+                    you can filter them to be exactly what you want!
+                  </p>
+                  <img src="https://i.imgur.com/gSAJCUL.png" />
+                  <img src="https://i.imgur.com/NzlRwVY.png" />
                 </div>
               </div>
             </div>
@@ -151,19 +151,20 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={require('./../../assets/images/feature-tile-icon-05.svg')}
+                      src={require("./../../assets/images/feature-tile-icon-05.svg")}
                       alt="Features tile icon 05"
                       width={64}
-                      height={64} />
+                      height={64}
+                    />
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">
-                    Robust Workflow
-                    </h4>
+                  <h4 className="mt-0 mb-8">Feedback / Bug Reports Feature</h4>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
-                    </p>
+                    Collect suggestions or bug reports from your users. A flexible and customizable feedback feature
+                    that provides the best experience for not just developers but users as well for sending feedback.
+                  </p>
+                  <img src="https://i.imgur.com/Q0dNsCc.png" />
                 </div>
               </div>
             </div>
@@ -173,29 +174,30 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={require('./../../assets/images/feature-tile-icon-06.svg')}
+                      src={require("./../../assets/images/feature-tile-icon-06.svg")}
                       alt="Features tile icon 06"
                       width={64}
-                      height={64} />
+                      height={64}
+                    />
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">
-                    Robust Workflow
-                    </h4>
+                  <h4 className="mt-0 mb-8">Best Support System Ever!</h4>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
-                    </p>
+                    Allow users to create private tickets right on Discord! Create a list of questions users must answer
+                    to send a ticket! Set up custom template responses for FAQ! Why waste money on third party support
+                    who don't really understand your game, when you can just have your most helpful players like your
+                    moderators help the players! They understand the players needs and concerns better than anyone else!
+                  </p>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
     </section>
   );
-}
+};
 
 FeaturesTiles.propTypes = propTypes;
 FeaturesTiles.defaultProps = defaultProps;
