@@ -28,22 +28,17 @@ const Footer = ({
   );
 
   return (
-    <footer
-      {...props}
-      className={classes}
-    >
+    <footer {...props} className={classes}>
       <div className="container">
-        <div className={
-          classNames(
-            'site-footer-inner',
-            topDivider && 'has-top-divider'
-          )}>
+        <div className={classNames("site-footer-inner", topDivider && "has-top-divider")}>
           <div className="footer-top space-between text-xxs">
             <Logo />
           </div>
           <div className="footer-bottom space-between text-xxs invert-order-desktop">
             <FooterNav />
-            <div className="footer-copyright">Made by <a href="https://cruip.com">Dligence</a>. All rights reserved</div>
+            <div className="footer-copyright">
+              Made by <a href="https://discord.gg/J4NqJ72">Dligence</a>. All rights reserved
+            </div>
           </div>
         </div>
       </div>

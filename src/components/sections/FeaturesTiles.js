@@ -42,7 +42,7 @@ const FeaturesTiles = ({
   const sectionHeader = {
     title: "What Gamer Can Do For You!",
     paragraph:
-      "Gamer is one of the most advanced bots on Discord. It was designed for specifically for official gaming servers. But it is built in a way that it can be used by any server!",
+      "Gamer is one of the most advanced bots on Discord. It was designed specifically for official gaming servers. But it is built in a way that it can be used by any server!",
   };
 
   return (
@@ -185,10 +185,11 @@ const FeaturesTiles = ({
                   <h4 className="mt-0 mb-8">Best Support System Ever!</h4>
                   <p className="m-0 text-sm">
                     Allow users to create private tickets right on Discord! Create a list of questions users must answer
-                    to send a ticket! Set up custom template responses for FAQ! Why waste money on third party support
-                    who don't really understand your game, when you can just have your most helpful players like your
-                    moderators help the players! They understand the players needs and concerns better than anyone else!
+                    to send a ticket! And so much more!!! Why waste money on third party support who don't really
+                    understand your game, when you can just have your most helpful players like your moderators help the
+                    players! They understand the players needs and concerns better than anyone else!
                   </p>
+                  <img src="https://i.imgur.com/VPCA4oz.png" alt="" />
                 </div>
               </div>
             </div>

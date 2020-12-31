@@ -1,7 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
-import { Link } from "react-router-dom";
 import Logo from "./partials/Logo";
 
 const propTypes = {
@@ -86,13 +85,13 @@ const Header = ({ className, navPosition, hideNav, hideSignin, bottomOuterDivide
                   {!hideSignin && (
                     <ul className="list-reset header-nav-right">
                       <li>
-                        <Link
-                          to="https://gamer.mod.land/docs/vip.html"
+                        <a
+                          href="https://gamer.mod.land/docs/vip.html"
                           className="button button-primary button-wide-mobile button-sm"
                           onClick={closeMenu}
                         >
                           Premium/VIP
-                        </Link>
+                        </a>
                       </li>
                     </ul>
                   )}

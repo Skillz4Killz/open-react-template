@@ -50,7 +50,7 @@ const Cta = ({
             <h3 className="m-0">Join Discord for more info!</h3>
             <h3 className="m-0">Get The Bot Today!</h3>
             <p className="m-0">10,000+ servers!</p>
-            <p className="m-0">2,391,204+ users!</p>
+            <p className="m-0">2,000,000+ users!</p>
           </div>
           <ButtonGroup className="cta-action">
             <Button tag="a" color="primary" wideMobile href="https://discord.gg/J4NqJ72">
