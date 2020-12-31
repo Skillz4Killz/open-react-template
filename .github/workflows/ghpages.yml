@@ -42,3 +42,5 @@ jobs:
           fqdn: discordbot.mod.land
           # Allow Jekyll to build your site
           jekyll: false
+        env:
+          GH_PAT: ${{ secrets.GITHUB_TOKEN }}
