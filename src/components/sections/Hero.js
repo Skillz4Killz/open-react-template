@@ -72,6 +72,7 @@ const Hero = ({
             data-reveal-delay="800"
           >
             <iframe
+              title="Events Feature"
               src="https://www.youtube.com/embed/81LHNO5W8Pw?autoplay=1&mute=1"
               width={896}
               height={504}
