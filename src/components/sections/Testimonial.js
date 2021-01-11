@@ -1,7 +1,7 @@
 import React from "react";
 import classNames from "classnames";
 import { SectionTilesProps } from "../../utils/SectionProps";
-import SectionHeader from "./partials/SectionHeader";
+// import SectionHeader from "./partials/SectionHeader";
 
 const propTypes = {
   ...SectionTilesProps.types,
@@ -22,28 +22,28 @@ const Testimonial = ({
   pushLeft,
   ...props
 }) => {
-  const outerClasses = classNames(
-    "testimonial section",
-    topOuterDivider && "has-top-divider",
-    bottomOuterDivider && "has-bottom-divider",
-    hasBgColor && "has-bg-color",
-    invertColor && "invert-color",
-    className
-  );
+  // const outerClasses = classNames(
+  //   "testimonial section",
+  //   topOuterDivider && "has-top-divider",
+  //   bottomOuterDivider && "has-bottom-divider",
+  //   hasBgColor && "has-bg-color",
+  //   invertColor && "invert-color",
+  //   className
+  // );
 
-  const innerClasses = classNames(
-    "testimonial-inner section-inner",
-    topDivider && "has-top-divider",
-    bottomDivider && "has-bottom-divider"
-  );
+  // const innerClasses = classNames(
+  //   "testimonial-inner section-inner",
+  //   topDivider && "has-top-divider",
+  //   bottomDivider && "has-bottom-divider"
+  // );
 
-  const tilesClasses = classNames("tiles-wrap", pushLeft && "push-left");
+  // const tilesClasses = classNames("tiles-wrap", pushLeft && "push-left");
 
-  const sectionHeader = {
-    title: "Testimonials",
-    paragraph:
-      "Here's what our users have to say about Gamer! Check out their server's for yourself to get a view on how they make use of Gamer to create an amazing community!",
-  };
+  // const sectionHeader = {
+  //   title: "Testimonials",
+  //   paragraph:
+  //     "Here's what our users have to say about Gamer! Check out their server's for yourself to get a view on how they make use of Gamer to create an amazing community!",
+  // };
 
   return (
     <div></div>
